@@ -1,11 +1,19 @@
-h1 {
-    color:darkgreen;
-}
-h2{
-    color:#fff;
-    background: red;
+body {
+	background: #fefefe;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-section{
-    background: #aaa;
+h1 {
+	color: navy;
+}
+h2 {
+	color: #1460aa;
+	background: #aaa;
+}
+h3 {
+    color: darkcyan;
+}
+
+section {
+	background: #ccc;
 }
