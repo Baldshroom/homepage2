@@ -1,19 +1,52 @@
 body {
-	background: #fefefe;
 	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
 }
 
-h1 {
+.article {
+	background-color: lightgreen;
+}
+
+.article-text {
+	color:green;
+}
+
+.footer {
+	background-color: maroon;
+}
+
+.footer-link {
+	color:yellow;
+}
+.footer-text{
+	color:beige;
+}
+.header-article {
+color: darkgreen;
+}
+
+.header-blue {
+color: darkblue;
+}
+
+.header-red {
+	color: darkred;
+}
+
+.image {
+	max-width: 400px;
+}
+
+.nav-link {
 	color: navy;
 }
-h2 {
-	color: #1460aa;
-	background: #aaa;
-}
-h3 {
-	color: darkcyan;
+
+.navigation {
+	height: 100px;
+	background-color: aquamarine;
 }
 
-section {
-	background: #ccc;
+.section {
+	background: lightgray;
 }
+
