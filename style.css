@@ -1,3 +1,27 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* RESET STYLI POZA NORMALIZE.CSS
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+} 
+
+*/
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #333;
@@ -8,7 +32,7 @@ body {
 }
 
 .article-text {
-	color:green;
+	color: green;
 }
 
 .footer {
@@ -16,17 +40,22 @@ body {
 }
 
 .footer-link {
-	color:yellow;
+	color: yellow;
 }
-.footer-text{
-	color:beige;
+.footer-text {
+	color: beige;
 }
+
+header {
+	padding: 16px;
+}
+
 .header-article {
-color: darkgreen;
+	color: darkgreen;
 }
 
 .header-blue {
-color: darkblue;
+	color: darkblue;
 }
 
 .header-red {
@@ -48,5 +77,5 @@ color: darkblue;
 
 .section {
 	background: lightgray;
+	padding: 16px;
 }
-
