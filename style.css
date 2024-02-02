@@ -27,55 +27,70 @@ body {
 	color: #333;
 }
 
-.article {
-	background-color: lightgreen;
+main {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
 }
 
-.article-text {
-	color: green;
+.article{
+	margin: 10px;
+	border-radius: 8px;
+	padding: 8px 16px;
+	background: beige;
+}
+
+.article__heading {
+	color: orange;
+	font-size: 24px;
+}
+
+.article__text {
+	color: #555;
 }
 
 .footer {
-	background-color: maroon;
+	padding: 8px 16px;
+	background: coral;
 }
 
-.footer-link {
-	color: yellow;
+.footer__text{
+	color: bisque;
 }
-.footer-text {
+
+.header-hero {
+	padding: 8px 16px;
+}
+
+.header-hero__heading {
+font-size: 36px;
+color: orangered;
+}
+
+.header-hero__image {
+	width: 100%;
+	max-width: 1000px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+
+.header-nav__navigation {
+	padding: 16px;
+	height: 80px;
+	width: 100%;
+	background: tomato;
+}
+
+.header-nav__navigation--link {
 	color: beige;
 }
 
-header {
-	padding: 16px;
+.section	{
+	padding: 8px 16px;
 }
 
-.header-article {
-	color: darkgreen;
-}
-
-.header-blue {
-	color: darkblue;
-}
-
-.header-red {
-	color: darkred;
-}
-
-.image {
-	max-width: 400px;
-}
-
-.nav-link {
-	color: navy;
-}
-
-.navigation {
-	height: 100px;
-	background-color: aquamarine;
-}
-
-.section {
-	background: lightgray;
-	padding: 16px;
+.section__heading {
+	font-size: 28px;
+	color: darkorange;
 }
