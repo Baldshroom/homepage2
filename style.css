@@ -46,6 +46,7 @@ main {
 }
 
 .article__text {
+	line-height: 1.5;
 	color: #555;
 }
 
@@ -116,4 +117,8 @@ main {
 .section__heading {
 	font-size: 28px;
 	color: darkorange;
+}
+
+.section__text {
+	line-height: 1.5;
 }
