@@ -33,7 +33,7 @@ main {
 	max-width: 1280px;
 }
 
-.article{
+.article {
 	margin: 10px;
 	border-radius: 8px;
 	padding: 8px 16px;
@@ -54,8 +54,27 @@ main {
 	background: coral;
 }
 
-.footer__text{
+.footer__text {
 	color: bisque;
+}
+
+.footer__text--link {
+	display: block;
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	padding: 8px 12px;
+	border-radius: 8px;
+	background: darkred;
+	color: white;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+.footer__text--link:hover {
+	text-decoration: underline;
+	background-color: rgb(190, 1, 1);
+	scale: 1.05;
 }
 
 .header-hero {
@@ -63,8 +82,8 @@ main {
 }
 
 .header-hero__heading {
-font-size: 36px;
-color: orangered;
+	font-size: 36px;
+	color: orangered;
 }
 
 .header-hero__image {
@@ -75,8 +94,7 @@ color: orangered;
 	border-radius: 8px;
 }
 
-.header-nav
-{
+.header-nav {
 	position: sticky;
 	top: 0;
 }
@@ -91,7 +109,7 @@ color: orangered;
 	color: beige;
 }
 
-.section	{
+.section {
 	padding: 8px 16px;
 }
 
