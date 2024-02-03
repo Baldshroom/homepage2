@@ -75,6 +75,11 @@ color: orangered;
 	border-radius: 8px;
 }
 
+.header-nav
+{
+	position: sticky;
+	top: 0;
+}
 .header-nav__navigation {
 	padding: 16px;
 	height: 80px;
