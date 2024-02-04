@@ -12,12 +12,12 @@ console.log(heroText.innerHTML);
 
 // Pierwsza funkcja
 function hello(firstName, age) {
-  console.log(`Cześć mam na imię ${firstName} i mam ${age} lat`);
+	console.log(`Cześć mam na imię ${firstName} i mam ${age} lat`);
 }
 
 function hello2() {
-  firstName2 = 'Oskar';
-  age2 = 25;
-  // return `Cześć mam na imię ${firstName2} i mam ${age2} lat.`;
-  console.log(`Cześć mam na imię ${firstName2} i mam ${age2} lat.`);
+	firstName2 = "Oskar";
+	age2 = 25;
+	// return `Cześć mam na imię ${firstName2} i mam ${age2} lat.`;
+	console.log(`Cześć mam na imię ${firstName2} i mam ${age2} lat.`);
 }
