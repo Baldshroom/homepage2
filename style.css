@@ -77,7 +77,12 @@ main {
 	background-color: rgb(190, 1, 1);
 	scale: 1.05;
 }
-
+.hamburger {
+	border: 0;
+	background: none;
+	font-size: 30px;
+	padding: 8px 10px;
+}
 .header-hero {
 	padding: 8px 16px;
 }
@@ -97,18 +102,18 @@ main {
 
 .header-nav {
 	background: tomato;
-	background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
 	position: sticky;
 	top: 0;
 	min-height: 50px;
+	display: flex;
+	justify-content: flex-end;
 }
 .header-nav__navigation {
 	padding: 16px;
-	height: 80px;
 	width: 100%;
 	background: tomato;
-	background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
-	display: flex;
+	display: none;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 16px;
@@ -133,6 +138,10 @@ main {
 	line-height: 1.5;
 }
 
+.navigation--open {
+	display: flex;
+}
+
 @media screen and (min-width: 768px) {
 	.article--grid {
 		display: grid;
@@ -151,14 +160,14 @@ main {
 	}
 	.header-nav__navigation {
 		padding: 16px;
-		height: 80px;
 		width: 100%;
 		background: tomato;
-		background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		gap: 16px;
+		position: static;
 	}
 	.section__heading {
 		font-size: 26px;
@@ -189,9 +198,11 @@ main {
 		background: tomato;
 		background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		gap: 16px;
+		position: static;
 	}
 	.section__heading {
 		font-size: 28px;
