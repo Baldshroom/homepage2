@@ -21,12 +21,3 @@ function hello2() {
 	// return `Cześć mam na imię ${firstName2} i mam ${age2} lat.`;
 	console.log(`Cześć mam na imię ${firstName2} i mam ${age2} lat.`);
 }
-
-const hamburger = document.querySelector(".hamburger--js");
-
-hamburger.addEventListener("click", () => {
-	const navigation = document.querySelector(".header-nav__navigation--js");
-	navigation.classList.toggle("navigation--open");
-});
-
-console.log(navigation);

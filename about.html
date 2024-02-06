@@ -2,34 +2,38 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="normalize.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="normalize.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <header class="header-nav">
-		<nav class="header-nav__navigation">
+	<header class="header-nav">
+		<nav class="header-nav__navigation header-nav__navigation--js">
 			<a class="header-nav__navigation--link" href="index.html">Strona główna</a>
 			<a class="header-nav__navigation--link" href="about.html">O mnie</a>
 			<a class="header-nav__navigation--link" href="contact.html">Kontakt</a>
+			<a class="header-nav__navigation--link" href="#">Instagram</a>
+			<a class="header-nav__navigation--link" href="#">Linkedin</a>
 		</nav>
+		<button class="hamburger hamburger--js">🍔</button>
 	</header>
-  <main>
-    <header class="header-hero" id="top">
+	<main>
+		<header class="header-hero" id="top">
 			<h1 class="header-hero__heading header-hero__heading--js">Lorem ipsum dolor sit amet.</h1>
 			<img class="header-hero__image" src="widok.jpg" alt="ładny widok przedstawiający zielone pagórki">
 		</header>
-  </main>
-  <footer class="footer">
+	</main>
+	<footer class="footer">
 		<p class="footer__text">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
 			cumque quas cupiditate ea unde, quae aliquid mollitia molestias amet
-			dicta! <a class="footer-link" href="#top">Do góry!</a>
+			dicta! <a class="footer__text--link" href="#top">Do góry! ⬆</a>
 		</p>
 	</footer>
+	<script defer src="hamburger.js"></script>
 </body>
 
 </html>
