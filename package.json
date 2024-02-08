@@ -5,7 +5,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "parcel src/index.html",
-		"build": "parcel build src/index.html "
+		"build": "parcel build src/index.html ",
+		"cow": "cowsay -d Umarłam"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,6 +15,7 @@
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
+		"@parcel/transformer-sass": "^2.11.0",
 		"cowsay": "^1.6.0",
 		"parcel": "^2.11.0"
 	}
