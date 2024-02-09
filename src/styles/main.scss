@@ -1,3 +1,6 @@
+$desktop: 1280px;
+$tablet: 768px;
+
 html {
 	box-sizing: border-box;
 }
@@ -39,13 +42,36 @@ main {
 	border-radius: 8px;
 	padding: 8px 16px;
 	background: beige;
+
 	&__heading {
 		color: $textColor;
 		font-size: 20px;
+
+		@media screen and (min-width: $tablet) {
+			color: $textColor;
+			font-size: 22px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			color: orange;
+			font-size: 24px;
+		}
 	}
+
 	&__text {
 		line-height: 1.5;
 		color: #555;
+	}
+	&--grid {
+		@media screen and (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (min-width: $desktop) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
 	}
 }
 
@@ -82,6 +108,14 @@ main {
 	background: none;
 	font-size: 30px;
 	padding: 8px 10px;
+
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+
+	@media screen and (min-width: $desktop) {
+		display: none;
+	}
 }
 .header-hero {
 	padding: 8px 16px;
@@ -90,15 +124,26 @@ main {
 		font-size: 28px;
 		color: orangered;
 
-    &::before {
-      content: "";
-      width: 28px;
-      height: 28px;
-      background: orangered;
-      display: inline-block;
-      margin-right: 16px;
-    }
+		&::before {
+			content: "";
+			width: 28px;
+			height: 28px;
+			background: orangered;
+			display: inline-block;
+			margin-right: 16px;
+		}
+
+		@media screen and (min-width: $tablet) {
+			font-size: 30px;
+			color: orangered;
+		}
+
+		@media screen and (min-width: $desktop) {
+			font-size: 36px;
+			color: orangered;
+		}
 	}
+
 	&__image {
 		width: 100%;
 		max-width: 1000px;
@@ -115,6 +160,7 @@ main {
 	min-height: 50px;
 	display: flex;
 	justify-content: flex-end;
+
 	&__navigation {
 		padding: 16px;
 		width: 100%;
@@ -126,6 +172,32 @@ main {
 		gap: 16px;
 		position: absolute;
 		top: 50px;
+
+		@media screen and (min-width: $tablet) {
+			padding: 16px;
+			width: 100%;
+			background: tomato;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+			position: static;
+		}
+
+		@media screen and (min-width: $desktop) {
+			padding: 16px;
+			height: 80px;
+			width: 100%;
+			background: tomato;
+			background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+			position: static;
+		}
 
 		&--link {
 			color: beige;
@@ -139,7 +211,18 @@ main {
 	&__heading {
 		font-size: 24px;
 		color: darkorange;
+
+		@media screen and (min-width: $tablet) {
+			font-size: 26px;
+			color: darkorange;
+		}
+
+		@media screen and (min-width: $desktop) {
+			font-size: 28px;
+			color: darkorange;
+		}
 	}
+
 	&__text {
 		line-height: 1.5;
 	}
@@ -147,72 +230,4 @@ main {
 
 .navigation--open {
 	display: flex;
-}
-
-@media screen and (min-width: 768px) {
-	.article--grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	.article__heading {
-		color: orange;
-		font-size: 22px;
-	}
-	.hamburger {
-		display: none;
-	}
-	.header-hero__heading {
-		font-size: 30px;
-		color: orangered;
-	}
-	.header-nav__navigation {
-		padding: 16px;
-		width: 100%;
-		background: tomato;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		gap: 16px;
-		position: static;
-	}
-	.section__heading {
-		font-size: 26px;
-		color: darkorange;
-	}
-}
-
-@media screen and (min-width: 1280px) {
-	.article--grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	.article__heading {
-		color: orange;
-		font-size: 24px;
-	}
-	.hamburger {
-		display: none;
-	}
-	.header-hero__heading {
-		font-size: 36px;
-		color: orangered;
-	}
-	.header-nav__navigation {
-		padding: 16px;
-		height: 80px;
-		width: 100%;
-		background: tomato;
-		background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		gap: 16px;
-		position: static;
-	}
-	.section__heading {
-		font-size: 28px;
-		color: darkorange;
-	}
 }
