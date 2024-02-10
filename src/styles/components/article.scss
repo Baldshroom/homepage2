@@ -1,0 +1,40 @@
+$desktop: 1280px;
+$tablet: 768px;
+
+.article {
+	margin: 10px;
+	border-radius: 8px;
+	padding: 8px 16px;
+	background: beige;
+
+	&__heading {
+		color: orange;
+		font-size: 20px;
+
+		@media screen and (min-width: $tablet) {
+			color: orange;
+			font-size: 22px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			color: orange;
+			font-size: 24px;
+		}
+	}
+
+	&__text {
+		line-height: 1.5;
+		color: #555;
+	}
+	&--grid {
+		@media screen and (min-width: $tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (min-width: $desktop) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
